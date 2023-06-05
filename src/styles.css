@@ -38,13 +38,13 @@ h3 {
 .second-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 100px;
+
   grid-gap: 50px;
 }
 .card-group {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 20px 20px 40px 20px;
+
   grid-gap: 20px;
   width: 100%;
 }
@@ -61,8 +61,14 @@ h3 {
   h2 {
     font-size: 20px;
   }
+  .hero {
+    padding: 30px 20px;
+  }
   .image {
+    display: block;
+    margin: 0 auto;
     width: 300px;
+    margin-top: 20px;
   }
   .second-hero {
     display: block;
@@ -71,11 +77,16 @@ h3 {
     width: 300px;
     margin: 20px;
   }
-  .card-group,
+  .card-group {
+    display: block;
+    margin: 0;
+    padding: 40px;
+    width: 300px;
+  }
   .instagram-media {
     display: block;
-    margin: 0 auto;
-    padding: 40px;
+    margin: 0;
+
     width: 300px;
   }
 }
