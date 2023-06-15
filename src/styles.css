@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(158, 172, 134);
 }
 h1 {
   font-size: 80px;
@@ -11,7 +12,7 @@ h3 {
   font-size: 20px;
 }
 
-.hero {
+header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/nigeria-image.jpeg");
   background-position: center;
@@ -20,16 +21,19 @@ h3 {
   color: white;
   text-align: center;
 }
-.learn-more-button a {
+header a {
   background-color: white;
   padding: 16px 32px;
   color: black;
   text-decoration: none;
   font-size: 18px;
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
   margin-top: 20px;
   max-width: fit-content;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .image {
   width: 600px;
@@ -51,14 +55,42 @@ h3 {
   grid-gap: 20px;
   width: 100%;
 }
-@media (max-width: 600px) {
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/image-footer.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 80px;
+  color: white;
+}
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer li {
+  list-style: none;
+  line-height: 1.9;
+}
+footer a {
+  color: white;
+}
+footer ul {
+  padding: 0;
+}
+@media (max-width: 800px) {
   h1 {
-    font-size: 30px;
+    font-size: 38px;
   }
   h2 {
     font-size: 20px;
   }
-
+  header {
+    padding: 60px 0;
+  }
+  footer {
+    padding: 60px 40px;
+  }
   .image {
     display: block;
     margin: 0 auto;
