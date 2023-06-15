@@ -35,13 +35,11 @@ header a {
   max-width: 1400px;
   margin: 0 auto;
 }
-.image {
-  width: 600px;
-}
-.second-hero {
+.section-one {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
+  margin-top: 30px;
 }
 .card-group {
   display: grid;
@@ -54,6 +52,15 @@ header a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   width: 100%;
+}
+.section-two {
+  background-color: #f8f8f8;
+  padding: 100px;
+}
+
+main {
+  background-color: white;
+  padding: 100px;
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -94,10 +101,10 @@ footer ul {
   .image {
     display: block;
     margin: 0 auto;
-    width: 300px;
+    width: 500px;
     margin-top: 20px;
   }
-  .second-hero {
+  .section-one {
     display: block;
   }
   .paragraph {
