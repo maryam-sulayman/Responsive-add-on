@@ -1,15 +1,21 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(158, 172, 134);
+  background-color: #9ead86;
 }
-h1 {
+header h1 {
   font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 5px;
 }
-h2 {
+header h2 {
   font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 3px;
 }
-h3 {
+header h3 {
   font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: 700;
 }
 h4 {
   font-size: 24px;
@@ -18,7 +24,7 @@ h5 {
   font-size: 13px;
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/nigeria-image.jpeg");
   background-position: center;
   background-size: cover;
@@ -36,6 +42,21 @@ header a {
   margin-top: 20px;
   max-width: fit-content;
 }
+#reason {
+  font-size: 18px;
+  opacity: 0.4;
+  letter-spacing: 3px;
+}
+.section-two h2,
+.section-three h2 {
+  font-size: 40px;
+}
+.section-two h3,
+.section-three h3,
+.paragraph h3 {
+  font-size: 25px;
+  opacity: 0.4;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -44,7 +65,6 @@ header a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
-  margin-top: 30px;
 }
 .card-group {
   display: grid;
@@ -62,10 +82,12 @@ header a {
 .section-three {
   background-color: white;
   padding: 100px;
+  margin-top: 10px;
 }
 .section-two {
-  background-color: #edebeb;
+  background-color: #dce1dc;
   padding: 100px;
+  margin-top: 10px;
 }
 .card-body {
   padding: 30px;
@@ -73,8 +95,13 @@ header a {
 .card-body p {
   color: #797685;
 }
-.button {
-  background-color: rgb(82, 21, 82);
+.card-top {
+  padding: 0 auto;
+  max-width: 100%;
+}
+.button,
+.button-intro {
+  background-color: #798862;
   color: white;
   display: block;
   margin: 0 auto;
@@ -83,14 +110,47 @@ header a {
   text-align: center;
   margin-top: 50px;
 }
+.button-intro {
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button-intro:hover {
+  cursor: pointer;
+}
+.card-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.card-top img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.card-group {
+  grid-gap: 40px;
+}
+.card-group .card {
+  margin-bottom: 50px;
+}
 footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(
+      rgba(63, 67, 54, 0.9),
+      rgba(63, 67, 54, 0.9)
+    ),
     url("../images/image-footer.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 120px 80px;
+  padding: 80px;
   color: white;
+  margin-top: 10px;
 }
 footer h3 {
   font-size: 20px;
@@ -106,18 +166,23 @@ footer a {
 footer ul {
   padding: 0;
 }
-@media (max-width: 800px) {
-  h1 {
+@media (max-width: 960px) {
+  header h1 {
     font-size: 38px;
   }
-  h2 {
+  header h2 {
     font-size: 20px;
   }
   header {
-    padding: 60px 0;
+    padding: 30px 0;
   }
   footer {
     padding: 60px 40px;
+  }
+  .section-one,
+  .section-two,
+  .section-three {
+    padding: 50px 0 0 0;
   }
   .image {
     display: block;
@@ -128,14 +193,44 @@ footer ul {
   .section-one {
     display: block;
   }
+  .section-two h3 {
+    font-size: 20px;
+  }
+  .section-two h2 {
+    font-size: 25px;
+  }
+  .section-three h3 {
+    font-size: 20px;
+  }
+  .section-three h2 {
+    font-size: 25px;
+  }
+  .first-card {
+    margin-top: -50px;
+  }
+  .first-nedia {
+    margin-top: -50px;
+  }
   .paragraph {
     margin: 20px 0;
     padding: 40px;
   }
-  .card-group,
-  .instagram-media {
+  .card-group {
     display: block;
     margin: 0;
     padding: 40px;
+  }
+  .card-top {
+    display: block;
+  }
+  .card-top img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
+  }
+  .instagram-media {
+    max-width: 100%;
+    display: block;
   }
 }
