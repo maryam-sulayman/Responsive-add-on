@@ -53,15 +53,16 @@ header a {
   grid-gap: 20px;
   width: 100%;
 }
-.section-two {
-  background-color: #f8f8f8;
-  padding: 100px;
-}
-
-main {
+.section-one,
+.section-three {
   background-color: white;
   padding: 100px;
 }
+.section-two {
+  background-color: #edebeb;
+  padding: 100px;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/image-footer.jpeg");
