@@ -66,17 +66,10 @@ header a {
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 }
-.card-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  width: 100%;
-}
-.instagram-media {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  width: 100%;
+.section-two {
+  background-color: #dce1dc;
+  padding: 100px;
+  margin-top: 10px;
 }
 .section-one,
 .section-three {
@@ -84,10 +77,15 @@ header a {
   padding: 100px;
   margin-top: 10px;
 }
-.section-two {
-  background-color: #dce1dc;
-  padding: 100px;
-  margin-top: 10px;
+.card-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  width: 100%;
+}
+
+.card-group .card {
+  margin-bottom: 50px;
 }
 .card-body {
   padding: 30px;
@@ -98,6 +96,19 @@ header a {
 .card-top {
   padding: 0 auto;
   max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card-top img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.instagram-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  width: 100%;
 }
 .button,
 .button-intro {
@@ -114,30 +125,9 @@ header a {
   letter-spacing: 4px;
   font-weight: 700;
 }
-.button:hover {
-  cursor: pointer;
-}
-.button-intro:hover {
-  cursor: pointer;
-}
-.card-top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 .embed {
   width: 100%;
   aspect-ratio: 1/1;
-}
-.card-top img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1/1;
-}
-.card-group {
-  grid-gap: 40px;
-}
-.card-group .card {
-  margin-bottom: 50px;
 }
 footer {
   background-image: linear-gradient(
@@ -187,8 +177,7 @@ footer ul {
   .image {
     display: block;
     margin: 0 auto;
-    width: 500px;
-    margin-top: 20px;
+    width: 300px;
   }
   .section-one {
     display: block;
@@ -208,7 +197,7 @@ footer ul {
   .first-card {
     margin-top: -50px;
   }
-  .first-nedia {
+  .first-media {
     margin-top: -50px;
   }
   .paragraph {
@@ -232,5 +221,9 @@ footer ul {
   .instagram-media {
     max-width: 100%;
     display: block;
+  }
+  .button-intro {
+    font-size: 15px;
+    padding: 10px;
   }
 }
