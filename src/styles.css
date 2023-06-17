@@ -6,22 +6,33 @@ header h1 {
   font-size: 80px;
   font-weight: 700;
   letter-spacing: 5px;
+  margin: 0;
 }
 header h2 {
   font-size: 30px;
   font-weight: 500;
   letter-spacing: 3px;
+  margin: 0;
 }
 header h3 {
   font-size: 20px;
   letter-spacing: 5px;
   font-weight: 700;
+  margin: 0;
 }
 h4 {
   font-size: 24px;
 }
 h5 {
   font-size: 13px;
+}
+.paragraph h3 {
+  margin: 0;
+}
+.paragraph h2 {
+  font-weight: 700;
+  font-size: 31px;
+  margin: 0;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -44,18 +55,20 @@ header a {
 }
 #reason {
   font-size: 18px;
-  opacity: 0.4;
+  opacity: 0.3;
   letter-spacing: 3px;
 }
 .section-two h2,
 .section-three h2 {
   font-size: 40px;
+  margin-top: 0;
 }
 .section-two h3,
 .section-three h3,
 .paragraph h3 {
   font-size: 25px;
-  opacity: 0.4;
+  opacity: 0.3;
+  margin: 0;
 }
 .container {
   max-width: 1400px;
@@ -77,6 +90,15 @@ header a {
   padding: 100px;
   margin-top: 10px;
 }
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card h4 {
+  margin: 0;
+}
 .card-group {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -84,11 +106,9 @@ header a {
   width: 100%;
 }
 
-.card-group .card {
-  margin-bottom: 50px;
-}
 .card-body {
   padding: 30px;
+  background-color: white;
 }
 .card-body p {
   color: #797685;
@@ -98,13 +118,14 @@ header a {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: white;
 }
 .card-top img {
   display: block;
   width: 100%;
   aspect-ratio: 1/1;
 }
-.instagram-media {
+.instagram-embed {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 50px;
@@ -128,6 +149,15 @@ header a {
 .embed {
   width: 100%;
   aspect-ratio: 1/1;
+}
+.text-center {
+  text-align: center;
+}
+.information-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 20px;
+  padding: 20px;
 }
 footer {
   background-image: linear-gradient(
@@ -167,7 +197,10 @@ footer ul {
     padding: 30px 0;
   }
   footer {
-    padding: 60px 40px;
+    padding: 0;
+  }
+  .information-list {
+    display: block;
   }
   .section-one,
   .section-two,
@@ -182,11 +215,15 @@ footer ul {
   .section-one {
     display: block;
   }
+  .section-one h2 {
+    font-size: 24px;
+  }
   .section-two h3 {
     font-size: 20px;
   }
   .section-two h2 {
     font-size: 25px;
+    margin: 0;
   }
   .section-three h3 {
     font-size: 20px;
@@ -194,20 +231,19 @@ footer ul {
   .section-three h2 {
     font-size: 25px;
   }
-  .first-card {
-    margin-top: -50px;
-  }
-  .first-media {
-    margin-top: -50px;
+  .section-three {
+    padding: 30px;
   }
   .paragraph {
     margin: 20px 0;
     padding: 40px;
   }
+  .card-group .card {
+    padding: 30px;
+  }
   .card-group {
     display: block;
     margin: 0;
-    padding: 40px;
   }
   .card-top {
     display: block;
@@ -218,12 +254,15 @@ footer ul {
   .embed {
     aspect-ratio: 16/9;
   }
-  .instagram-media {
+  .instagram-embed {
     max-width: 100%;
     display: block;
   }
   .button-intro {
     font-size: 15px;
     padding: 10px;
+  }
+  .instagram-embed .instagram-all-media {
+    margin-bottom: 30px;
   }
 }
